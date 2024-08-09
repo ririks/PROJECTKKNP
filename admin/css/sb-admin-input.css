@@ -1,0 +1,144 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Questrial&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+    .container form {
+        width: 950px;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+form .row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.row .column {
+    flex: 1 1 250px;
+}
+
+.column .input-box {
+    margin: 15px 0;
+}
+
+.input-box span {
+    display: block;
+    margin-block: 10px;
+}
+
+.input-box input, .input-box select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.column .flex {
+    display: flex;
+}
+
+.flex .input-box {
+    margin-top: 5px;
+}
+
+form .btn {
+    width: 130px;
+    padding: 12px;
+    background: #4072d8;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+    form .btn:hover {
+        background: #203b71;
+    }
+
+/* GridView */
+
+.gridview-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #cccccc;
+}
+
+.gridview-container th,
+.gridview-container td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #cccccc;
+}
+
+.gridview-container th {
+    background-color: #203b71;
+    color: white;
+    font-weight: bold;
+}
+
+.gridview-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.gridview-container tr:hover {
+    background-color: #ddd;
+}
+
+.gridview-container tfoot {
+    background-color: white;
+    color: #000066;
+}
+
+.gridview-container .pager {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.gridview-container .selected-row {
+    background-color: #669999;
+    color: white;
+    font-weight: bold;
+}
+
+.gridview-container .sorted-asc {
+    background-color: #f1f1f1;
+}
+
+.gridview-container .sorted-desc {
+    background-color: #cac9c9;
+}
+
+.gridview-container .button {
+    background-color: #006699;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 5px;
+    display: inline-flex;
+}
+
+    .gridview-container .button:hover {
+        background-color: #005080;
+    }
